@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+p{
+    font-size: 1.2em;
+}
+hr{
+    clear: both;
+    margin: 2%;
+}
+h2,h3{
+    margin: 10px 0 10px 0;
+}
+
+body{
+    background-color: #FFF9ED;
+}
+
+footer{
+    clear: both;
+    background-color: #4a7074;
+}
+
+header{
+    margin-bottom: 5em;
+    background: #14676e;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    top: 0em;
+}
+
+
+h1{
+    color: #0e4f55;
+    left: 90%;
+    margin: 4em 0 2em 0;
+    text-align: center;
+    font-size: 3em;
+}
+span.corletra1{
+    color: #fabd0d;
+}
+span.corletra2{
+    color: #448b18;
+}
+span.corletra3{
+    color: #2b747b;
+}
+span.corletra4{
+   color: #737d04;
+}
+
+hr{
+    margin-top: 10em;
+    z-index: 8;
+}
+
+
+a{
+    color: #fff;
+}
+
+
+
+
+/*Index*/
+/* Estilos básicos para centralizar e dimensionar o carrossel */
+.carousel-container {
+    top: 8em;
+    position: relative;
+    width: 900px;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+/* Oculta os radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Estilos das imagens */
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Mostra a imagem correspondente ao radio button selecionado */
+#slide1:checked~.s1,
+#slide2:checked~.s2,
+#slide3:checked~.s3 {
+    opacity: 1;
+}
+
+/* Botões de navegação */
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.carousel-buttons label {
+    width: 15px;
+    height: 15px;
+    background-color: #FABD0D; /* o que fica brilhando*/
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Muda a cor do botão ativo */
+#slide1:checked~.carousel-buttons .b1,
+#slide2:checked~.carousel-buttons .b2,
+#slide3:checked~.carousel-buttons .b3 {
+    background-color: #0E4F55;/*o que a pessoa está*/
+}
+
+.verde{
+    background-color:   #f5e2abcb;
+    
+}
+
+
+.azul{
+    background-color: #a0bcccc2;
+    width: 100%;
+    height: 100vh !important;
+}
+
+.azul p{
+    padding: 11% 0;
+}
+
+.dia{
+    background-color: #bff7a8be;
+    height: 100vh !important;
+}
+
+.dia p{
+    padding: 11% 0;
+}
+
+.links a{
+    background-color: #448b18;
+    border-radius: 30px;
+    padding: 5px;
+}
+#section1{
+    margin-top: 5%;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.card{
+    margin: 4%;
+    background-color: rgb(214, 210, 210);
+    width: 30em;
+    height: 30em;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card img{
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.card button{
+    margin: 4% 35%;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: rgb(177, 173, 173);
+    background-color:#ada63e;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+
+#section1 p{
+    text-align: justify;
+    padding: 1em 10em;
+}
+
+#section2 p{
+    text-align: justify;
+    padding: 1em 5em 0.1em 30em;
+}
+
+#section3 p{
+    text-align: justify;
+    padding: 1em 30em 0.1em 5em;
+}
+
+
+/*CURSO*/
+
+.naosei{
+    width: 100%;
+    max-width: 80%;
+    padding: 0 2em;
+    text-align: justify;
+    margin-left: 4em;
+}
+
+.naosei div {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.listabloco{
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.lista {
+   float: left;
+   margin: 0.8em;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.lista strong {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 16px;
+}
+
+.lista ul {
+    padding-left: 20px;
+}
+
+.lista ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/*trabalho*/
+.esquerdatexto{
+    float: left;
+    width: 55%;
+}
+
+.direitatexto{
+    float: right;
+    width: 55%;
+}
+
+
+.esquerdaimg{
+    float: left;
+    width: 40%;
+}
+
+.direitaimg{
+    float:right;
+    width: 40%;
+}
+
+.esquerdaimg img{
+   margin: 2%;
+    width: 100%; 
+}
+
+.direitaimg img{
+    margin: 2%;
+    width: 100%; 
+}
+.flutua{
+    clear: both;
+}
+
+
+/*SOBRE*/
+
+
+section.module.content {
+    padding: 40px 0;
+    background-color: #FFF9ED;
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module.parallax-1 {
+    background-image: url("../imagens/sobreempresa.jpg");
+}
+
+section.module.parallax-2 {
+    background-image: url("../imagens/imgartigo3.jpg");
+}
+
+section.module.parallax-3{
+    background-image: url("../imagens/mosasecomputador.jpg");
+}
+
+.texto{
+    width: 100%;
+    max-width: 80%;
+    padding: 0 2em;
+    text-align: justify;
+    margin-left: 4em;
+}
+ 
+ 
+
+
+
+/*formulario*/
+
+.formulario {
+    background-color: rgb(251, 252, 239);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    
+}
+
+.formulario h2 {
+    color: #333333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.formulario p {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.dados {
+    margin: 2%;
+    width: 20%;
+    float: left;
+}
+
+.dados label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.dados input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.botao {
+    background-color: #fabd0d;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    width: 70%;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+.botao:hover {
+    background-color: #e9b20f;
+}
+
+
+/*EM TODAS AS PAGINAS, MENU E RODAPÉ*/
+.tamanho{
+    width: 40%;
+    float: left;
+    height: 100vh;
+}
+.tmhprojeto{
+    height: 100vh;
+    width: 40%;
+    float: right
+    
+}
+.menu{
+    margin-left: 30%;
+    padding-top: 3%;
+}
+
+.menu p{
+    margin-left: 3px;
+    
+    font-size: 2em;
+    float: left;
+    color:#0E4F55;
+    background-color: #fffae6;
+    border-radius: 30px;
+    padding: 0px 8px 0 8px;
+    margin-bottom: 3%;
+}
+.menu a{
+    margin: 2%;
+    color: #fff;
+    background-color: #017b86;
+    border-radius: 30px;
+    padding: 8px;
+   text-align: right;
+}
+
+div.linksmenu{
+    width:60%;
+    float: right;
+    margin-bottom: 20px;
+}
+.menu a:hover{
+      background-color: #FFF9ED;
+      border-radius: 2px 3px 10px 10px;
+      color: #14676e;
+      padding: 8px;
+}
+
+.tamahnomenu{
+    width: 80px;
+    float: left;
+    margin: 0.5em;
+    margin-left: 5em;
+}
+
+.tamanhorodape{
+    width: 10%;
+    float: left;
+    margin: 0.5em;
+    margin-left: 5em;
+}
+
+.centro{
+    margin-left: 16%;
+}
+
+.botaofalso{
+    margin-top: 4%;
+    background-color: #fabd0d;
+    color: #ffffff;
+    border: none;
+    padding: 12px 56px;
+    width: 30%;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 40%;
+}
+.ladorodape{
+    float: right;
+    margin: 3% 15%;
+}
+
+.alinharrodape{
+    margin-left: 35%;
+    font-size: 1.3em;
+    margin-bottom: 2%;
+    
+}
